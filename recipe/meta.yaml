@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "1.7.8" %}
+{% set version = "1.7.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5fe96232c4d038c5f7d964c84a2d6302308a95f895ce87a632679e16d771cad
+  sha256: 74a00b8f4d61d6f2b3178698a27de520b5c867c1929a2c4b5eb90817db327be0
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - dtale = dtale.cli.script:main
 
@@ -46,7 +46,7 @@ about:
   home: https://github.com/man-group/dtale/
   license: LGPL
   license_file: LICENSE
-  summary: 'D-Tale is the combination of a Flask back-end and a React front-end to bring you an easy way to view & analyze Pandas data structures'
+  summary: D-Tale is the combination of a Flask back-end and a React front-end to bring you an easy way to view & analyze Pandas data structures
 
   doc_url: https://dtale.readthedocs.io
   dev_url: https://github.com/man-group/dtale/
