@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "1.8.3" %}
+{% set version = "1.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 981e8195c4207fc60a48dc485f81d6e2a45b7eff01d449388bfc2651eb80d334
+  sha256: fae2d90f6796fa459dac12a07a259db56da396167b4b0bf5f769d1a5a77013a7
 
 build:
   number: 0
