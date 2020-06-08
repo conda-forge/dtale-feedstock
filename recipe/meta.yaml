@@ -32,8 +32,10 @@ requirements:
     - itsdangerous
     - pandas
     - requests
+    - scikit-learn
     - scipy
     - six
+    - xarray
 
 test:
   commands:
@@ -53,6 +55,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - Juanlu001
     - AlexS12
     - aschonfeld
