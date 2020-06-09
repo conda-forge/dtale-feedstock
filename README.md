@@ -117,6 +117,6 @@ Feedstock Maintainers
 =====================
 
 * [@AlexS12](https://github.com/AlexS12/)
-* [@Juanlu001](https://github.com/Juanlu001/)
+* [@astrojuanlu](https://github.com/astrojuanlu/)
 * [@aschonfeld](https://github.com/aschonfeld/)
 
