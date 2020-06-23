@@ -10,7 +10,7 @@ source:
   sha256: da87b9ce662c3bb36e474280b06235402ab3064cc505be310ed3f9ce192905ae
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -25,6 +25,7 @@ requirements:
     - python
     - lz4
     - dash
+    - dash-bootstrap-components
     - dash-daq
     - Flask-Compress
     - Flask
