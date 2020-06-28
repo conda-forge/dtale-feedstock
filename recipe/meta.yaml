@@ -26,6 +26,7 @@ requirements:
     - lz4
     - dash
     - dash-bootstrap-components
+    - dash-colorscales
     - dash-daq
     - Flask-Compress
     - Flask
@@ -36,6 +37,7 @@ requirements:
     - scikit-learn
     - scipy
     - six
+    - statsmodels
     - xarray
 
 test:
