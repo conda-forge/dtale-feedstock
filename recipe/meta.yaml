@@ -10,7 +10,7 @@ source:
   sha256: 87f5e2ca1cbc6ac10bce7054bcf9d5ec51524d84f4ee92d5cb7b8e0e719a16bb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -37,6 +37,7 @@ requirements:
     - scikit-learn
     - scipy
     - six
+    - squarify
     - statsmodels
     - xarray
 
