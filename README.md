@@ -5,11 +5,13 @@ Home: https://github.com/man-group/dtale/
 
 Package license: LGPL
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dtale-feedstock/blob/master/LICENSE.txt)
 
 Summary: D-Tale is the combination of a Flask back-end and a React front-end to bring you an easy way to view & analyze Pandas data structures
 
+Development: https://github.com/man-group/dtale/
 
+Documentation: https://dtale.readthedocs.io
 
 Current build status
 ====================
