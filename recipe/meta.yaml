@@ -39,6 +39,7 @@ requirements:
     - six
     - squarify
     - statsmodels
+    - strsimpy
     - xarray
 
 test:
