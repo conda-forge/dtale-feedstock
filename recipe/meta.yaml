@@ -32,7 +32,6 @@ requirements:
     - Flask
     - future
     - itsdangerous
-    - python-kaleido
     - pandas
     - requests
     - scikit-learn
