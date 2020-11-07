@@ -10,7 +10,7 @@ source:
   sha256: cb7696741e04d0f9380ce75838412fd24d3e86449f842966a659a87074ce3850
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -51,7 +51,7 @@ test:
 
 about:
   home: https://github.com/man-group/dtale/
-  license: LGPL
+  license: LGPL-2.1-only
   license_file: LICENSE
   summary: D-Tale is the combination of a Flask back-end and a React front-end to bring you an easy way to view & analyze Pandas data structures
 
