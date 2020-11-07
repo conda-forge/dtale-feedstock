@@ -3,7 +3,7 @@ About dtale
 
 Home: https://github.com/man-group/dtale/
 
-Package license: LGPL
+Package license: LGPL-2.1-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dtale-feedstock/blob/master/LICENSE.txt)
 
@@ -118,7 +118,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@AlexS12](https://github.com/AlexS12/)
 * [@aschonfeld](https://github.com/aschonfeld/)
-* [@astrojuanlu](https://github.com/astrojuanlu/)
 
