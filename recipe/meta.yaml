@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "1.36.0" %}
+{% set version = "1.37.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 018482f259e57fe24f5a6c7c46496c1eaf8b67334abf142492c774012a6f05aa
+  sha256: 78fcd02ffb0e523734ec8a26704b7595352aa431981a067dba8c0d14837621b6
 
 build:
   number: 0 
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - dtale = dtale.cli.script:main
 
 requirements:
   host:
-    - python
+    - python ==2.7.*|>=3.6
     - pip
     - six
   run:
-    - python
+    - python ==2.7.*|>=3.6
     - lz4
     - dash
     - dash-bootstrap-components
