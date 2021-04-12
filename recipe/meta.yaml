@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "1.41.1" %}
+{% set version = "1.42.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ef2a4e2fa954cffaf2859562174034cd6dceb1ed73a51f262566f1b418a0df77
+  sha256: d5bffa57e7f4da148118a8888d4aebd5e516b5d0ccc0fc2bde27b0384c5001cf
 
 build:
   number: 0 
@@ -32,11 +32,13 @@ requirements:
     - Flask
     - future
     - itsdangerous
+    - missingno
     - networkx
     - openpyxl
     - pandas
     - ppscore
     - requests
+    - seaborn
     - scikit-learn
     - scipy
     - six
