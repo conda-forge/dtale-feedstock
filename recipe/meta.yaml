@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "1.46.0" %}
+{% set version = "1.47.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76d2d3f4e09dcd3571bacd4079681db0c9a804ad3d4f922ba6116cbe43552e5a
+  sha256: 1eaad73344b3d58fd07e635ca4ed3d42bb22d039350cd8754bf760412971b512
 
 build:
   number: 0 
@@ -33,7 +33,6 @@ requirements:
     - future
     - itsdangerous
     - missingno
-    - nbformat
     - networkx
     - openpyxl
     - pandas
