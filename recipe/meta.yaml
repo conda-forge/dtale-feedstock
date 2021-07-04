@@ -10,7 +10,7 @@ source:
   sha256: 1cbf10bc26b85a692af05b46d8a2787362c7303aa36e498f19eb59b8e40b9fa7
 
 build:
-  number: 0 
+  number: 1 
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -32,10 +32,11 @@ requirements:
     - Flask
     - future
     - itsdangerous
-    - missingno
+    - missingno !=0.4.3
     - networkx
     - openpyxl
     - pandas
+    - plotly >=4.14.3
     - ppscore
     - requests
     - seaborn
