@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "1.56.0" %}
+{% set version = "1.57.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bb96e90a956ba4b94c24cb7ce2deb89799477a41fe0b7946df11e930602488d4
+  sha256: b61c94c4e84711b479ac9f1395d72a86736eca23f636c8493e3e9e6039481cfb
 
 build:
   number: 0
@@ -26,6 +26,8 @@ requirements:
     - lz4
     - dash
     - dash-bootstrap-components
+    - dash-core-components
+    - dash-html-components
     - dash_colorscales
     - dash-daq
     - Flask-Compress
