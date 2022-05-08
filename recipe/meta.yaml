@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 684be3c665beb43fc4fba4ae90ee17439c4f7d08aa878af52ef6479392089395
+  sha256: 4b203dbfb8f61a56fcef8ef1b77909a7f9dd9ff05614e6230167e2c595fcb6f3
 
 build:
   number: 0
@@ -39,7 +39,6 @@ requirements:
     - openpyxl
     - pandas
     - plotly >=4.14.3
-    - ppscore
     - requests
     - seaborn
     - scikit-learn
