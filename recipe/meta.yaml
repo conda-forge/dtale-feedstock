@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 83e03424351f91d939103ed143601827c54282298af0055fe7a1c3a0ea426cf6
+  sha256: 7705724f78ab1f78bb9850cf8e1f2bb5c8a318c145e9ed7438f8090b06d08549
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
   run:
     - python ==2.7.*|>=3.6
     - lz4
+    - beautifulsoup4
     - dash
     - dash-bootstrap-components
     - dash-core-components
