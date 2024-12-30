@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 98a5821c352817ceeac078f079d92de22f5921c8cf5b466e2163a438271ff0a4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python ==2.7.*|>=3.6
+    - python {{ python_min }}
     - pip
     - six
   run:
-    - python ==2.7.*|>=3.6
+    - python >={{ python_min }}
     - lz4
     - beautifulsoup4
     - dash
@@ -52,6 +52,8 @@ requirements:
     - xlrd
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - dtale --help
   imports:
