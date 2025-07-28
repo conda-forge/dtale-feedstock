@@ -1,5 +1,5 @@
 {% set name = "dtale" %}
-{% set version = "3.18.0" %}
+{% set version = "3.18.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a62e8f3f783f8a01954b789c2e5a12b4cb60f946e484b404772ceac0ebd7f3f5
+  sha256: e1434d2d5c0c9b83febdb551001203d3b9b0539ef4ea8b60343aaadad1c3c80f
 
 build:
   number: 0
@@ -39,6 +39,7 @@ requirements:
     - networkx
     - openpyxl
     - pandas
+    - pkginfo
     - plotly >=4.14.3
     - requests
     - seaborn
